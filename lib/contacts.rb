@@ -17,8 +17,13 @@
 def remove_strawberry(contacts)
   # creating a new method to remove strawberry
   contacts.each do |person, contact_details_hash|
+    # iterating over contacts by person and contact details
     contact_details_hash.each do |attribute, data|
-  if attribute == :favorite_ice_cream_flavors.delete_if {|ice_cream| ice_cream = "strawberry"}
+      # to get to the second tier you have to iterate over contact details 
+  if attribute == :favorite_ice_cream_flavors.delete_if
+    # if attribute equals fav icecream flavors you will delete if 
+      {|ice_cream| ice_cream = "strawberry"}
+      # ice_cream is equal to strawberry
     # binding.pry
       end
     end 
