@@ -15,6 +15,6 @@ require 'pry'
   }
   
 def remove_strawberry(contacts)
-   
+   if :favorite_ice_cream_flavors
 
 end
